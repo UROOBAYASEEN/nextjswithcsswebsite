@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+
 interface data{
 
     image:string
@@ -12,7 +14,7 @@ const Review:React.FC<data> = (data) => {
   return (
     <div className='review'>
         <div>
-            <img src={data.image} alt='this is image'></img>
+            <Image src={data.image} alt='this is image'/>
             <p className='reva'>{ data.review}</p>
         </div>
 

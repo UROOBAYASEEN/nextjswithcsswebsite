@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 
 
@@ -15,7 +16,7 @@ const Menucom:React.FC<burgermenu> = (param) => {
     <div className='menubox'>
       <h3 className='heading3'>{param.burgurname}</h3>
       <div className='burgur'>
-        <div><img src={param.image} className='myimg' alt='this  is iamge'></img></div>
+        <div><Image src={param.image} className='myimg' alt='this  is iamge'/></div>
         <div>
 <p>{param.details}</p>
 <h4>{param.price}</h4>

@@ -5,15 +5,20 @@ import { RiInstagramFill } from "react-icons/ri";
 
 
 const Footer = () => {
+  const icons = [
+    { component: <FaFacebookF />, name: 'facebook' },
+    { component: <FaTwitter />, name: 'twitter' },
+    { component: <RiInstagramFill />, name: 'instagram' },
+  ];
   return (
     <div className='footerdiv'>
 
 <div> @ The burgur shops</div>
 <div>
 <div className='flex'>
-            {[<FaFacebookF/>,<FaTwitter/>,<RiInstagramFill />].map((val,ind)=>
+            {icons.map((val,ind)=>
             
-          <p    key={ind} className='icon'>{val}</p>
+          <p key={val.name} className='icon'>{val.component}</p>
           
           
           )
