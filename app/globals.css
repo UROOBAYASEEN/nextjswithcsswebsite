@@ -301,4 +301,17 @@ object-fit: cover;
   display: flex;
 }
 
+.center{
+  display:  flex;
+}
+.center li{
 
+  padding: 0 20px;
+
+}
+
+.center li:hover{
+
+
+  color: red;
+}
